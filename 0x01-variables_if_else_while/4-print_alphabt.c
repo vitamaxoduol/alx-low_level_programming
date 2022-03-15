@@ -1,22 +1,27 @@
-#include <stdio.h>
-
-/**
- * main - prints the alphabet in lowercase,
- * followed by a new line, except q and e
- * Return: Aways 0 (Sucess)
- */
-int main(void)
-{
-	char ch = 'a';
-
-	while (ch <= 'z')
-		if (ch != 'e' && ch != 'q')
-	{
-		putchar (ch);
-	{
-		ch++;
-	}
-		putchar('\n');
-	}
-		return (0);
+#include <stdio.h>                                                                                                                     
+/**                                                                                                                                    
+* main -Entry point                                                                                                                    
+*                                                                                                                                      
+* Return: Always 0 (Success/correct)                                                                                                   
+                                                                                                                                       
+int main(void)                                                                                                                         
+                                                                                                                                       
+{                                                                                                                                      
+char alphabet;                                                                                                                         
+                                                                                                                                       
+for (alphabet = 'a' <= 'z'; alphabet++)                                                                                                
+{                                                                                                                                      
+if (alphabet == 'q')                                                                                                                   
+continue;                                                                                                                              
+                                                                                                                                       
+else if (alphabet == 'e')                                                                                                              
+continue;                                                                                                                              
+                                                                                                                                       
+putchar(alphabet);                                                                                                                     
+}                                                                                                                                      
+                                                                                                                                       
+putchar('\n');                                                                                                                         
+                                                                                                                                       
+return(0);                                                                                                                             
+                                                                                                                                       
 }
