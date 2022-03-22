@@ -1,15 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
+ * main - generates keygen.
+ * Return: 0 Always.
  */
 int main(void)
 {
-int num;
+	int pass, sum;
 
-srand(time(0));
-num = rand();
-printf("%i\n", num);
-return (0);
+	srand(time(NULL));
+	sum = 0;
+	while (sum <= 2645)
+	{
+		pass = (rand() % 128);
+		sum += pass;
+		printf("%c", pass);
+	}
+	printf("%c", 2772 - sum);
+	
+	return (0);
 }
