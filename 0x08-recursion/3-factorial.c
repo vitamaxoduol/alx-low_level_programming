@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *factorial - returns the factorial of a given number
- *@s: pointer block of memory to fill
+ *@n: pointer block of memory to fill
  *Return: factorial
  */
 
@@ -14,6 +14,6 @@ return (1);
 else if (n < 0) /*Base condition*/
 return (-1);
 else
-return (n * factorial (n - 1)); /*Recursive call*/
+return (n * factorial(n - 1)); /*Recursive call*/
 
 }
