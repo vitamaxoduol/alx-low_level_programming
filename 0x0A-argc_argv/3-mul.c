@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * main - print program that multiplies two numbers
  * @argc: counting the arguements
@@ -9,7 +8,6 @@
  *
  * Return: 0 if true, 1 if false
  */
-
 int main(int argc, char *argv[])
 {
 int x, y;
