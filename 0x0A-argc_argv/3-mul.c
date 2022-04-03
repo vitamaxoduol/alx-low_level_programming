@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * main - print program that multiplies two numbers
  * @argc: counting the arguements
