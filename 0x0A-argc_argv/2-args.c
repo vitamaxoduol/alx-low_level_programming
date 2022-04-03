@@ -11,17 +11,18 @@
 
 int main(int argc, char *argv[])
 {
-/*Declares variables*/
-int i = 0;
 
-if (argc > 0)
-{
-/*To print each arguement*/
-while (i < argc)
-{
-printf("%s\n", argv[i]);
-i++;
-}
-}
-return (0)
+    /*Declares variables*/
+    int count = 0;
+
+    if (argc > 0)
+    {
+        /*To print each arguement*/
+        while (count < argc)
+        {
+            printf("%s\n", argv[count]);
+            count++;
+        }
+    }
+    return (0);
 }
