@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 int x, y;
-if (argc == 5)
+if (argc == 3)
 {
 x = atoi(argv[1]);
 y = atoi(argv[2]);
