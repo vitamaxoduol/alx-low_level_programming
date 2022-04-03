@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * main - print program that multiplies two numbers
  * @argc: counting the arguements
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
     {
         x = atoi(argv[1]);
         y = atoi(argv[2]);
-        printf("%d\n", x *y);
+        printf("%d\n", x * y);
         return (0);
     }
     printf("Error\n");
