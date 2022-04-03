@@ -1,5 +1,5 @@
 #include <stdio.h>
-include "main.h"
+#include "main.h"
 
 /**
  * main - print the new name, without having to compile it again
@@ -12,7 +12,7 @@ include "main.h"
 int main(int argc, char *argv[])
 {
 	(void) argc;
-	printf("%\n", argv[0];
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
