@@ -13,21 +13,21 @@
 int check_num(char *str)
 
 {
-    /*Declaring variables*/
-    unsigned int x;
+ /*Declaring variables*/
+unsigned int basket;
 
-    x = 0;
-    while (x < strlen(str)) /*count string*/
+basket = 0;
+while (basket < strlen(str)) /*count string*/
 
-    {
-    if  (!isdigit(str][x])) /*checking if the the str there are digits*/
-    {
-        return (0);
-    }
+{
+if  (!isdigit(str][basket])) /*checking if the the str there are digits*/
+{
+return (0);
+}
 
-    x++;
-    }
-    return (1)
+basket++;
+}
+return (1)
 }
 
 /**
@@ -42,32 +42,32 @@ int main(int argc, char *argv[])
 
 {
 
-    /*Declaring variables*/
-    int x;
-    int str_to_int;
-    int sum = 0;
+/*Declaring variables*/
+int basket;
+int str_to_int;
+int sum = 0;
 
-    x = 1;
-    while (x < argc) /*Goes through the whole array*/
-    {
-        if (check_num(argv[x]))
+basket = 1;
+while (basket < argc) /*Goes through the whole array*/
+{
+if (check_num(argv[basket]))
 
-        {
-            str_to_int = atoi(argv[x]); /*ATOI --> convert string to int*/
-            sum += str_to_int;
-        }
+{
+str_to_int = atoi(argv[basket]); /*ATOI --> convert string to int*/
+sum += str_to_int;
+}
 
-        /*Condition if one of the number contains symbols that are not digits*/
-        else
-        {
-            printf("Error\n");
-            return (1);
-        }
+/*Condition if one of the number contains symbols that are not digits*/
+else
+{
+printf("Error\n");
+return (1);
+}
 
-        x++;
-    }
+basket++;
+}
 
-    printf("%d\n", sum); /*print sum*/
+printf("%d\n", sum); /*print sum*/
 
-    return (0);
+return (0);
 }
