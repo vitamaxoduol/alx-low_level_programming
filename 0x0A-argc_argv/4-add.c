@@ -14,18 +14,18 @@ int check_num(char *str)
 
 {
  /*Declaring variables*/
-unsigned int basket;
+unsigned int count;
 
-basket = 0;
-while (basket < strlen(str)) /*count string*/
+count = 0;
+while (count < strlen(str)) /*count string*/
 
 {
-if  (!isdigit(str][basket])) /*checking if the the str there are digits*/
+if  (!isdigit(str[count])) /*checking if the the str there are digits*/
 {
 return (0);
 }
 
-basket++;
+count++;
 }
 return (1);
 }
@@ -43,17 +43,17 @@ int main(int argc, char *argv[])
 {
 
 /*Declaring variables*/
-int basket;
+int count;
 int str_to_int;
 int sum = 0;
 
-basket = 1;
-while (basket < argc) /*Goes through the whole array*/
+count = 1;
+while (count < argc) /*Goes through the whole array*/
 {
-if (check_num(argv[basket]))
+if (check_num(argv[count]))
 
 {
-str_to_int = atoi(argv[basket]); /*ATOI --> convert string to int*/
+str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
 sum += str_to_int;
 }
 
@@ -64,7 +64,7 @@ printf("Error\n");
 return (1);
 }
 
-basket++;
+count++;
 }
 
 printf("%d\n", sum); /*print sum*/
