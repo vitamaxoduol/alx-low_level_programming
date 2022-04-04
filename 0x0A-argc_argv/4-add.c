@@ -4,10 +4,10 @@
 #include <string.h>
 
 /**
- * main - checking string if str are digits
+ * main - checking - string are digits
  * @str: array str
  *
- * Return: 0
+ * Return: Always 0 (correct)
  */
 
 int check_num(char *str)
@@ -27,7 +27,7 @@ return (0);
 
 basket++;
 }
-return (1)
+return (1);
 }
 
 /**
