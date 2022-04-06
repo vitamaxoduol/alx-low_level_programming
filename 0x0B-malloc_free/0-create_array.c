@@ -13,17 +13,17 @@
 
 char *create_array(unsigned int size, char c)
 {
-    char *ptr;
-    unsigned int iter = 0;
+char *ptr;
+unsigned int iter = 0;
 
-    if (size == 0)
-    return (0);
+if (size == 0)
+return (0);
 
-    ptr = malloc(size * sizeof(char));
-    if (ptr == NULL)
-    return (0);
+ptr = malloc(size * sizeof(char));
+if (ptr == NULL)
+return (0);
 
-    for (; iter < size; iter++)
-    *(ptr + iter) = c;   
-    return (ptr);
+for (; iter < size; iter++)
+*(ptr + iter) = c;
+return (ptr);
 }
