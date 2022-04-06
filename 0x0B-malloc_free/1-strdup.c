@@ -3,14 +3,13 @@
 
 /**
  * _strdup - returns a pointer to a new string
- * @str: duplicate of the string
+ * @str: string
  *
- * Return: pointer if str is NULL
+ * Return: pointer of array of chars
  */
-
 char *_strdup(char *str)
 {
-char =  *strout;
+char *strout;
 unsigned int i, j;
 
 if (str == NULL)
