@@ -8,7 +8,7 @@
  * Return: pointer if str is NULL
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 char = *strout;
 unsigned int i, j;
