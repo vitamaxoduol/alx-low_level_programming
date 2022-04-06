@@ -11,8 +11,7 @@
  * Return; NULL or pointer to array
  */
 
-/*creatingS array of chars*/
-char *create_array(unsigned int size, char c) 
+char *create_array(unsigned int size, char c)
 {
 char *ptr;
 unsigned int iter = 0;
