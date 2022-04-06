@@ -9,7 +9,7 @@
  */
 char *_strdup(char *str)
 {
-char *strout;
+char *cat;
 unsigned int i, j;
 
 if (str == NULL)
@@ -17,13 +17,13 @@ return (NULL);
 
 for (i = 0; str[i] != '\0'; i++)
 ;
-strout = (char *)malloc(sizeof(char) * (i + 1));
+cat = (char *)malloc(sizeof(char) * (i + 1));
 
-if (strout == NULL)
+if (cat == NULL)
 return (NULL);
 
 for (j = 0; j <= i; j++)
-strout[j] = str[j];
+cat[j] = str[j];
 
-return (strout);
+return (cat);
 }
