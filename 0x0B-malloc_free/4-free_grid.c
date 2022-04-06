@@ -1,4 +1,3 @@
-ulien@ubuntu:~/0x0a. malloc, free$ cat 4-main.c
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,12 +9,13 @@ ulien@ubuntu:~/0x0a. malloc, free$ cat 4-main.c
  *
  * Return: Nothing.
  */
+
 void print_grid(int **grid, int width, int height)
 {
     if (grid != NULL && height != 0)
-	{
+{
 		for (; height >= 0; height--)
 			free(grid[height]);
 		free(grid);
-	}
+}
 }
