@@ -8,7 +8,7 @@
  * @size: size an array
  * @c: cagracter to initialize with
  *
- * Return; NULL or pointer to array
+ * Return: NULL or pointer to array
  */
 
 /*create array for print string*/
