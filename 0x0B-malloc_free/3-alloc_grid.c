@@ -11,7 +11,7 @@
  * Return: if width or height is 0 or negative, return NULL
  */
 
-int **alloc_grid(int width, int height
+int **alloc_grid(int width, int height)
 
 {
 /*declaring variables*/
