@@ -12,7 +12,7 @@
 
 void print_grid(int **grid, int width, int height)
 {
-    if (grid != NULL && height != 0)
+if (grid != NULL && height != 0)
 {
 		for (; height >= 0; height--)
 			free(grid[height]);
