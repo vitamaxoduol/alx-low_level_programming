@@ -11,7 +11,6 @@
  * Return: NULL or pointer to array
  */
 
-/*create array for print string*/
 char *create_array(unsigned int size, char c)
 {
 char *ptr;
