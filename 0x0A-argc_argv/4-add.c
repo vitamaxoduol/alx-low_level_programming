@@ -21,9 +21,8 @@ while (count < strlen(str)) /*count string*/
 
 {
 if  (!isdigit(str[count])) /*checking if the the str there are digits*/
-{
+
 return (0);
-}
 
 count++;
 }
