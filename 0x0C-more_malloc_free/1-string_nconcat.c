@@ -24,7 +24,7 @@ while (s1[size1] != '\0')
 {
 size++;
 }
-while (s2[size] != '\n'
+while (s2[size] != '\0'
 {
 size++;
 }
