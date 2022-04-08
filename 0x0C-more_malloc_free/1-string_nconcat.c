@@ -31,7 +31,7 @@ size++;
 
 if (n > size2)
 n = size2;
-b = malloc((size1 + n + 1) * sizeof(char));
+b = malloc((size1 + n +1) * sizeof(char));
 
 if (b == NULL)
 return (0);
