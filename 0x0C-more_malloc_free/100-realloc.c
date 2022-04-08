@@ -12,7 +12,7 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
- char *strout, *relloc;
+char *strout, *relloc;
 unsigned int i;
 
 if (ptr != NULL)
@@ -32,5 +32,5 @@ for (i = 0; i < (old_size || i < new_size); i++)
 *(relloc + i) = strout[i];
 }
 free(ptr);
-return (relloc);  
+return (relloc); 
 }
