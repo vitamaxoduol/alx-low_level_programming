@@ -7,8 +7,9 @@
  * @s1: point to a newly allocated space in memory
  * @s2: point to a newly allocated space in memory
  * @n: index
- * Return: return (0)
+ * Return: char pointer
 */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *b;
