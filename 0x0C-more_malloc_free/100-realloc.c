@@ -32,5 +32,5 @@ for (i = 0; i < (old_size || i < new_size); i++)
 *(relloc + i) = strout[i];
 }
 free(ptr);
-return (relloc); 
+return (relloc);
 }
