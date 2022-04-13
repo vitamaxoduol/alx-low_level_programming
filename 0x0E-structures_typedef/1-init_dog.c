@@ -17,9 +17,9 @@ return;
 
 else
 {
-d->name;
-d->age;
-d->owner;
+d->name = name ;
+d->age = age;
+d->owner =owner;
 }
 
 }
