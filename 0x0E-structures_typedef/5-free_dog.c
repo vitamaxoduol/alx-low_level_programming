@@ -4,7 +4,7 @@
 /**
  * free_dog - free memory
  * @d: array
- * 
+ *
  * Description: Free memory for struct
  */
 
