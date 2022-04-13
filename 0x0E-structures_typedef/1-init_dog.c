@@ -2,8 +2,8 @@
 #define DOG_H
 
 /**
- * init_dog - Struct dog
- * @d: dog
+ * init_dog - initialize a variable of type struct dog
+ * @d: array
  * @name: name
  * @age: age
  * @owner: owner
