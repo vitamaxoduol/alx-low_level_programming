@@ -2,7 +2,7 @@
 #include "dog.h"
 /**
  * free_dog - free memory
- * @d: array
+ *@d: array
  * Description: Free memory for struct
  */
 
