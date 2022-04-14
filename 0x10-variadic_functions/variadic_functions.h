@@ -1,5 +1,6 @@
 #ifndef _MAIN_H
 #define _MAIN_H
+#include <stdarg.h>
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
@@ -21,6 +22,7 @@ typedef struct printTypeStruct
 {
 char *type;
 void (*printer)(va_list);
-} printTypeStruct;
+} 
+printTypeStruct;
 
 #endif
