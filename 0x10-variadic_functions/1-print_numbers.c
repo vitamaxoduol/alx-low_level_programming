@@ -16,13 +16,13 @@ int val;
 va_list ls;
 
 va_start(ls, n);
- 
+
 for (j = 0; j < n; j++)
 {
-val = va_arg(ls, int);   
+val = va_arg(ls, int);
 printf("%d", val);
 if (separator != NULL)
- {
+{
 if (j != (n - 1))
 printf("%s", separator);
 }
