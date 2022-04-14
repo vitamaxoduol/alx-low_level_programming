@@ -49,7 +49,7 @@ s == NULL ? printf("(nil)") : printf("%s", s);
 void print_all(const char * const format, ...)
 {
 va_list list;
-int x = 0, y = 0;
+int i = 0, j = 0;
 char *sep = "";
 
 printTypeStruct printType[] = {
@@ -63,21 +63,21 @@ printTypeStruct printType[] = {
 
 va_start(list, format);
 
-while (format && format[x])
+while (format && format[i])
 {
-y = 0;
-while (y < 4)
+j = 0;
+while (j < 4)
 {
-if (*printType[y].type == format[x])
+if (*printType[j].type == format[i])
 {
 printf("%s", sep);
-printType[y].printer(list);
+printType[j].printer(list);
 sep = ", ";
 break;
 }
-y++;
+j++;
 }
-x++;
+i++;
 }
 
 printf("\n");
