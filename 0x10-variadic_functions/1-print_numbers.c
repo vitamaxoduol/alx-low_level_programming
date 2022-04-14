@@ -6,13 +6,12 @@
  * print_numbers - prints numbers, followed by a new line
  * @n: number of integers passed to the function
  * @separator: string to be printed between numbers
- * Return: return the sum
- *
+ * Return: return an int
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int n = j;
+unsigned int j;
 int val;
 va_list ls;
 
