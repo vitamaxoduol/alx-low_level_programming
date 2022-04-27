@@ -14,7 +14,7 @@ listint_t *h;
 listint_t *curr;
 
 if (*head == NULL)
-eturn (0);
+return (0);
 
 curr = *head;
 
