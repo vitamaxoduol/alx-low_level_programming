@@ -10,12 +10,12 @@
 
 size_t listint_len(const listint_t *h)
 {
-	size_t num_of_elements = 0;
+size_t num_of_elements = 0;
 
-	while (h != NULL)
-	{
-		h = h->next;
-		num_of_elements++;
-	}
-	return (num_of_elements);
+while (h != NULL)
+{
+h = h->next;
+num_of_elements++;
+}
+return (num_of_elements);
 }
