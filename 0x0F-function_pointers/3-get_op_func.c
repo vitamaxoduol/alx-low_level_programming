@@ -1,11 +1,11 @@
 #include "3-calc.h"
 #include <stdlib.h>
-#include <stdio.h>
+
 /**
-  * get_op_func - choosing the right func for the operator
-  * @s: the operator
+  * get_op_func - choosing the right function
+  * @s: the pointer operator
   *
-  * Return: result of function or error
+  * Return: Integer
   */
 int (*get_op_func(char *s))(int, int)
 {
@@ -18,17 +18,13 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-int i;
+int i = 0;
 
-/* matches operator to function */
-i = 0;
-while (ops[i].op)
+while (i < 5)
 {
-if (ops[i].op[0] == *s && s[1] == '\0')
+if (*(ops[i]).op == *s)
 return (ops[i].f);
 i++;
 }
-/* bad operator, print error */
-printf("Error\n");
-exit(99);
+return (NULL);
 }
