@@ -15,7 +15,7 @@ if (argc != 3)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
-    }
+}
 f1 = open(argv[1], O_RDONLY);
 if (f1 == -1)
 {
