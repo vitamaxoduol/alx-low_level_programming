@@ -1,45 +1,48 @@
 #include "lists.h"
-
 /**
- * insert_dnodeint_at_index - inserts a node at a given index
- * in a doubly linked list
- * @h: double pointer to the list
- * @idx: index of the node to insert
- * @n: data to insert
- *
- * Return: address of the new node, or NULL if it failed
+ *insert_dnodeint_at_index- inserts node anywear.
+ *@h: a ptr to ptr the listint_t list
+ *@idx: is the index of the node, starting at 0
+ *@n: the integer for the new node to contain
+ *Return: the address of the new node, or NULL if it failed.
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int i;
-	dlistint_t *new;
-	dlistint_t *temp = *h;
 
-	new = malloc(sizeof(dlistint_t));
-	if (!new || !h)
+	dlistint_t *newnode;
+	dlistint_t *traverse;
+	unsigned int pos;
+
+	if (h == NULL)
 		return (NULL);
-
-	new->n = n;
-	new->next = NULL;
-
+	newnode = malloc(sizeof(dlistint_t));
+	if (newnode == NULL)
+		return (NULL);
+	newnode->n = n;
 	if (idx == 0)
-		return (add_dnodeint(h, n));
-
-	for (i = 0; temp && i < idx; i++)
 	{
-		if (i == idx - 1)
-		{
-			if (temp->next == NULL)
-				return (add_dnodeint_end(h, n));
-			new->next = temp->next;
-			new->prev = temp;
-			temp->next->prev = new;
-			temp->next = new;
-			return (new);
-		}
-		else
-			temp = temp->next;
+		newnode->next = *h;
+		newnode->prev = NULL;
+		if (newnode->next != NULL)
+			newnode->next->prev = newnode;
+		*h = newnode;
 	}
+	else
+	{
+		traverse = *h;
+		for (pos = 0; traverse != NULL && pos < (idx - 1); pos++)
+			traverse = traverse->next;
+		if (traverse == NULL)
+		{
+			free(newnode);
+			return (NULL);
+		}
+		newnode->next = traverse->next;
+		newnode->prev = traverse;
+		if (traverse->next != NULL)
+			traverse->next->prev = newnode;
+		traverse->next = newnode;
+	}
+	return (newnode);
 
-	return (NULL);
 }
